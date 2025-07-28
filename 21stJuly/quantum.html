@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Art Kingdom – Talent Themes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    /* Custom styles for improved card appearance */
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      overflow: hidden; /* Ensure rounded corners for background image */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 250px; /* Ensure consistent height for cards with images */
+      position: relative; /* For the overlay */
+      z-index: 1; /* Ensure content is above background */
+    }
+
+    .card-body.bg-dark-overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* Darker overlay */
+        border-radius: 10px; /* Match card border-radius */
+    }
+
+    .card-title {
+      font-size: 1.75rem; /* Larger title */
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.05rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-brand .logo {
+      height: 40px;
+    }
+
+    .navbar-brand .fs-4 {
+      font-size: 1.8rem !important;
+      color: #333;
+    }
+
+    .page-title h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .page-title .lead {
+        font-size: 1.25rem;
+        color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+        <img src="images/logo.png" alt="Logo" class="logo me-2" />
+        <span class="fs-4 fw-bold">Talent Quest</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-4 page-title">
+    <h2>Art Kingdom</h2>
+    <p class="lead">Explore the frontier of logic, invention, and scientific creativity.</p>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <a href="drawing.html" class="text-decoration-none">
+          <div class="card h-100 shadow text-center text-white" style="background-image: url('images/drawing.webp'); background-size: cover; background-position: center;">
+            <div class="card-body bg-dark-overlay">
+              <h5 class="card-title">Drawing</h5>
+              <p class="card-text">Sketches, illustrations, and detailed artistic renditions.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="experiments.html" class="text-decoration-none">
+          <div class="card h-100 shadow text-center text-white" style="background-image: url('images/painting.webp'); background-size: cover; background-position: center;">
+            <div class="card-body bg-dark-overlay">
+              <h5 class="card-title">Painting</h5>
+              <p class="card-text">Canvas creations, digital paintings, and vibrant color palettes.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="simulations.html" class="text-decoration-none">
+          <div class="card h-100 shadow text-center text-white" style="background-image: url('images/crafts.jpg'); background-size: cover; background-position: center;">
+            <div class="card-body bg-dark-overlay">
+              <h5 class="card-title">Crafts</h5>
+              <p class="card-text">Handmade goods, sculptures, and creative DIY projects.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

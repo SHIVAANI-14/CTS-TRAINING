@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talent Quest – Unlock the Hidden Powers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    /* Custom styles for a more attractive index.html */
+    .hero-section {
+      background: url('https://images.unsplash.com/photo-1517486804823-9597793540c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+      background-size: cover;
+      color: white;
+      min-height: 80vh; /* Make it taller */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content .lead {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-brand .logo {
+      height: 40px; /* Adjust logo size */
+    }
+
+    .navbar-brand .fs-4 {
+      font-size: 1.8rem !important; /* Make brand name slightly larger */
+      color: #333; /* Darker color for contrast */
+    }
+
+    .btn-outline-primary {
+      border-color: #0d6efd;
+      color: #0d6efd;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+        background-color: #0a58ca;
+        border-color: #0a58ca;
+    }
+
+    /* Section for introduction */
+    .intro-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .intro-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Talent Quest Logo" class="logo" />
+        <span class="fs-4 ms-2 fw-bold">Talent Quest</span>
+      </a>
+      <div class="d-flex ms-auto">
+        <a href="register.html" class="btn btn-outline-primary me-2">Register</a>
+        <a href="login.html" class="btn btn-primary">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="hero-content">
+        <h1>Unlock Your Hidden Powers</h1>
+        <p class="lead">Discover, share, and connect with a community of incredible talents. Your stage awaits!</p>
+        <a href="dashboard.html" class="btn btn-warning btn-lg mt-3">Discover Talents</a>
+    </div>
+  </section>
+
+  <section class="intro-section">
+      <div class="container">
+          <h2>Welcome to Talent Quest</h2>
+          <p>Talent Quest is your ultimate platform to showcase your unique abilities, explore diverse creative realms, and connect with like-minded individuals. Whether you're an artist, innovator, performer, or thinker, there's a place for you here to shine and inspire.</p>
+          <p class="mt-3">Dive into various "Talent Themes" and unleash your potential today!</p>
+      </div>
+  </section>
+
+  <footer class="bg-light text-center py-3 mt-5">
+    <small>© 2025 Talent Quest. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
